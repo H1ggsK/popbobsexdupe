@@ -248,7 +248,7 @@ function handleVisibilityChange() {
         // Add exactly the amount of time spent away. Extending the absolute
         // deadline this way effectively pauses the countdown while they are gone.
         if (awayMs > 0 && sessionEndsAt !== null) {
-            sessionEndsAt += (awayMs*2);
+            sessionEndsAt += (awayMs*2); // double the penalty for leaving
             timeRemaining = Math.max(0, sessionEndsAt - returnedAt);
             updateTimerDisplay();
         }

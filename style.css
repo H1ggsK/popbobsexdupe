@@ -1,0 +1,72 @@
+body {
+    font-family: monospace;
+    text-align: center;
+    font-size: medium;
+    background-color: darksalmon;
+    padding: 50px;
+} 
+
+h1 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+#timer {
+    color: black;
+    font: bold 50px;
+    margin: 30px 0 20px 0;
+}
+
+#startButton {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: hotpink;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startButton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#theButton {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: orangered;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#theButton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+
+#theButton.active {
+    background-color: olivedrab;
+    border-color: black;
+    color: white;
+    box-shadow: 0 0 20px olivedrab;
+}
+
+#fomoBox {
+    position: fixed;
+    bottom: 100px;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+
+#message {
+    opacity: 0;
+    font-size:large;
+    color: black;
+    margin: 20px 0;
+    min-height: 40px;
+    transition: opacity 0.1s ease;
+}
+
